@@ -3,15 +3,8 @@ services:
     name: alanresto-backend
     env: docker
     plan: free
+    repo: https://github.com/ronisaputra764/alanresto-backend
+    dockerfilePath: Dockerfile
     branch: main
-    dockerfilePath: ./Dockerfile
-    envVars:
-      - key: APP_ENV
-        value: production
-      - key: APP_KEY
-        generateValue: true
-      - key: DB_CONNECTION
-        value: sqlite
-      - key: DB_DATABASE
-        value: /var/www/html/database/database.sqlite
+
 
